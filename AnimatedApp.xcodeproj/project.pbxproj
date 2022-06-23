@@ -11,6 +11,19 @@
 		BBECF1742863FA0500B7DDF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECF1732863FA0500B7DDF5 /* ContentView.swift */; };
 		BBECF1762863FA0800B7DDF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBECF1752863FA0800B7DDF5 /* Assets.xcassets */; };
 		BBECF1792863FA0800B7DDF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBECF1782863FA0800B7DDF5 /* Preview Assets.xcassets */; };
+		BBECF1872863FB4800B7DDF5 /* house.riv in Resources */ = {isa = PBXBuildFile; fileRef = BBECF1802863FB4800B7DDF5 /* house.riv */; };
+		BBECF1882863FB4800B7DDF5 /* confetti.riv in Resources */ = {isa = PBXBuildFile; fileRef = BBECF1812863FB4800B7DDF5 /* confetti.riv */; };
+		BBECF1892863FB4800B7DDF5 /* check.riv in Resources */ = {isa = PBXBuildFile; fileRef = BBECF1822863FB4800B7DDF5 /* check.riv */; };
+		BBECF18A2863FB4800B7DDF5 /* menu_button.riv in Resources */ = {isa = PBXBuildFile; fileRef = BBECF1832863FB4800B7DDF5 /* menu_button.riv */; };
+		BBECF18B2863FB4800B7DDF5 /* shapes.riv in Resources */ = {isa = PBXBuildFile; fileRef = BBECF1842863FB4800B7DDF5 /* shapes.riv */; };
+		BBECF18C2863FB4800B7DDF5 /* button.riv in Resources */ = {isa = PBXBuildFile; fileRef = BBECF1852863FB4800B7DDF5 /* button.riv */; };
+		BBECF18D2863FB4800B7DDF5 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = BBECF1862863FB4800B7DDF5 /* icons.riv */; };
+		BBECF1902864094100B7DDF5 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = BBECF18F2864094100B7DDF5 /* RiveRuntime */; };
+		BBECF1922864095F00B7DDF5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECF1912864095F00B7DDF5 /* OnboardingView.swift */; };
+		BBECF197286411A100B7DDF5 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBECF194286411A100B7DDF5 /* Inter-Regular.ttf */; };
+		BBECF198286411A100B7DDF5 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBECF195286411A100B7DDF5 /* Poppins-Bold.ttf */; };
+		BBECF199286411A100B7DDF5 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBECF196286411A100B7DDF5 /* Inter-SemiBold.ttf */; };
+		BBECF19B28642DB200B7DDF5 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECF19A28642DB200B7DDF5 /* CustomFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +32,19 @@
 		BBECF1732863FA0500B7DDF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BBECF1752863FA0800B7DDF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBECF1782863FA0800B7DDF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBECF1802863FB4800B7DDF5 /* house.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = house.riv; sourceTree = "<group>"; };
+		BBECF1812863FB4800B7DDF5 /* confetti.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = confetti.riv; sourceTree = "<group>"; };
+		BBECF1822863FB4800B7DDF5 /* check.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = check.riv; sourceTree = "<group>"; };
+		BBECF1832863FB4800B7DDF5 /* menu_button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu_button.riv; sourceTree = "<group>"; };
+		BBECF1842863FB4800B7DDF5 /* shapes.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = shapes.riv; sourceTree = "<group>"; };
+		BBECF1852863FB4800B7DDF5 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
+		BBECF1862863FB4800B7DDF5 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
+		BBECF1912864095F00B7DDF5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		BBECF194286411A100B7DDF5 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		BBECF195286411A100B7DDF5 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		BBECF196286411A100B7DDF5 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		BBECF19A28642DB200B7DDF5 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		BBECF19C28642E6600B7DDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBECF1902864094100B7DDF5 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +78,14 @@
 		BBECF1702863FA0500B7DDF5 /* AnimatedApp */ = {
 			isa = PBXGroup;
 			children = (
+				BBECF19C28642E6600B7DDF5 /* Info.plist */,
 				BBECF1712863FA0500B7DDF5 /* AnimatedAppApp.swift */,
 				BBECF1732863FA0500B7DDF5 /* ContentView.swift */,
+				BBECF1912864095F00B7DDF5 /* OnboardingView.swift */,
+				BBECF19A28642DB200B7DDF5 /* CustomFont.swift */,
 				BBECF1752863FA0800B7DDF5 /* Assets.xcassets */,
+				BBECF17F2863FB4800B7DDF5 /* RiveAssets */,
+				BBECF193286411A100B7DDF5 /* Fonts */,
 				BBECF1772863FA0800B7DDF5 /* Preview Content */,
 			);
 			path = AnimatedApp;
@@ -65,6 +97,30 @@
 				BBECF1782863FA0800B7DDF5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBECF17F2863FB4800B7DDF5 /* RiveAssets */ = {
+			isa = PBXGroup;
+			children = (
+				BBECF1802863FB4800B7DDF5 /* house.riv */,
+				BBECF1812863FB4800B7DDF5 /* confetti.riv */,
+				BBECF1822863FB4800B7DDF5 /* check.riv */,
+				BBECF1832863FB4800B7DDF5 /* menu_button.riv */,
+				BBECF1842863FB4800B7DDF5 /* shapes.riv */,
+				BBECF1852863FB4800B7DDF5 /* button.riv */,
+				BBECF1862863FB4800B7DDF5 /* icons.riv */,
+			);
+			path = RiveAssets;
+			sourceTree = "<group>";
+		};
+		BBECF193286411A100B7DDF5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BBECF194286411A100B7DDF5 /* Inter-Regular.ttf */,
+				BBECF195286411A100B7DDF5 /* Poppins-Bold.ttf */,
+				BBECF196286411A100B7DDF5 /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +139,9 @@
 			dependencies = (
 			);
 			name = AnimatedApp;
+			packageProductDependencies = (
+				BBECF18F2864094100B7DDF5 /* RiveRuntime */,
+			);
 			productName = AnimatedApp;
 			productReference = BBECF16E2863FA0500B7DDF5 /* AnimatedApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +170,9 @@
 				Base,
 			);
 			mainGroup = BBECF1652863FA0500B7DDF5;
+			packageReferences = (
+				BBECF18E2864094100B7DDF5 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = BBECF16F2863FA0500B7DDF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +187,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBECF199286411A100B7DDF5 /* Inter-SemiBold.ttf in Resources */,
+				BBECF18B2863FB4800B7DDF5 /* shapes.riv in Resources */,
+				BBECF1892863FB4800B7DDF5 /* check.riv in Resources */,
 				BBECF1792863FA0800B7DDF5 /* Preview Assets.xcassets in Resources */,
+				BBECF18A2863FB4800B7DDF5 /* menu_button.riv in Resources */,
+				BBECF1872863FB4800B7DDF5 /* house.riv in Resources */,
+				BBECF18C2863FB4800B7DDF5 /* button.riv in Resources */,
+				BBECF197286411A100B7DDF5 /* Inter-Regular.ttf in Resources */,
+				BBECF198286411A100B7DDF5 /* Poppins-Bold.ttf in Resources */,
 				BBECF1762863FA0800B7DDF5 /* Assets.xcassets in Resources */,
+				BBECF1882863FB4800B7DDF5 /* confetti.riv in Resources */,
+				BBECF18D2863FB4800B7DDF5 /* icons.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBECF1922864095F00B7DDF5 /* OnboardingView.swift in Sources */,
+				BBECF19B28642DB200B7DDF5 /* CustomFont.swift in Sources */,
 				BBECF1742863FA0500B7DDF5 /* ContentView.swift in Sources */,
 				BBECF1722863FA0500B7DDF5 /* AnimatedAppApp.swift in Sources */,
 			);
@@ -270,6 +344,7 @@
 				DEVELOPMENT_TEAM = BM7XDAK6P3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimatedApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +374,7 @@
 				DEVELOPMENT_TEAM = BM7XDAK6P3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimatedApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBECF18E2864094100B7DDF5 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBECF18F2864094100B7DDF5 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBECF18E2864094100B7DDF5 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBECF1662863FA0500B7DDF5 /* Project object */;
 }
