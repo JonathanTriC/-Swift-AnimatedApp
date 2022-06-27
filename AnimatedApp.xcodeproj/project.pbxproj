@@ -11,6 +11,11 @@
 		BB03260D2864B39100153DD2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03260C2864B39100153DD2 /* CustomTextField.swift */; };
 		BB03260F2864B60500153DD2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03260E2864B60500153DD2 /* Extensions.swift */; };
 		BB0326142865848800153DD2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0326132865848700153DD2 /* TabBar.swift */; };
+		BB0326182865902300153DD2 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0326162865902300153DD2 /* CourseSection.swift */; };
+		BB0326192865902300153DD2 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0326172865902300153DD2 /* Course.swift */; };
+		BB03261B2865905600153DD2 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03261A2865905600153DD2 /* VCard.swift */; };
+		BBBF5AF528698A4400DB2E05 /* HCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF5AF428698A4400DB2E05 /* HCard.swift */; };
+		BBBF5AF728698BDB00DB2E05 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF5AF628698BDB00DB2E05 /* HomeView.swift */; };
 		BBECF1722863FA0500B7DDF5 /* AnimatedAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECF1712863FA0500B7DDF5 /* AnimatedAppApp.swift */; };
 		BBECF1742863FA0500B7DDF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECF1732863FA0500B7DDF5 /* ContentView.swift */; };
 		BBECF1762863FA0800B7DDF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBECF1752863FA0800B7DDF5 /* Assets.xcassets */; };
@@ -35,6 +40,11 @@
 		BB03260C2864B39100153DD2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BB03260E2864B60500153DD2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BB0326132865848700153DD2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = AnimatedApp/TabBar.swift; sourceTree = SOURCE_ROOT; };
+		BB0326162865902300153DD2 /* CourseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
+		BB0326172865902300153DD2 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		BB03261A2865905600153DD2 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
+		BBBF5AF428698A4400DB2E05 /* HCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCard.swift; sourceTree = "<group>"; };
+		BBBF5AF628698BDB00DB2E05 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BBECF16E2863FA0500B7DDF5 /* AnimatedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBECF1712863FA0500B7DDF5 /* AnimatedAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedAppApp.swift; sourceTree = "<group>"; };
 		BBECF1732863FA0500B7DDF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +96,15 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
+		BB0326152865902300153DD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB0326162865902300153DD2 /* CourseSection.swift */,
+				BB0326172865902300153DD2 /* Course.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BBECF1652863FA0500B7DDF5 = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +128,12 @@
 				BBECF1712863FA0500B7DDF5 /* AnimatedAppApp.swift */,
 				BBECF1732863FA0500B7DDF5 /* ContentView.swift */,
 				BB0326132865848700153DD2 /* TabBar.swift */,
+				BB03261A2865905600153DD2 /* VCard.swift */,
+				BBBF5AF428698A4400DB2E05 /* HCard.swift */,
+				BBBF5AF628698BDB00DB2E05 /* HomeView.swift */,
 				BB032610286583F100153DD2 /* Views */,
 				BB0326122865840A00153DD2 /* Styles */,
+				BB0326152865902300153DD2 /* Model */,
 				BBECF1752863FA0800B7DDF5 /* Assets.xcassets */,
 				BBECF17F2863FB4800B7DDF5 /* RiveAssets */,
 				BBECF193286411A100B7DDF5 /* Fonts */,
@@ -237,13 +260,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBBF5AF528698A4400DB2E05 /* HCard.swift in Sources */,
 				BBECF1922864095F00B7DDF5 /* OnboardingView.swift in Sources */,
+				BBBF5AF728698BDB00DB2E05 /* HomeView.swift in Sources */,
 				BBECF19B28642DB200B7DDF5 /* CustomFont.swift in Sources */,
+				BB0326192865902300153DD2 /* Course.swift in Sources */,
 				BB03260D2864B39100153DD2 /* CustomTextField.swift in Sources */,
 				BB0326142865848800153DD2 /* TabBar.swift in Sources */,
+				BB03261B2865905600153DD2 /* VCard.swift in Sources */,
 				BBECF1742863FA0500B7DDF5 /* ContentView.swift in Sources */,
 				BBECF1722863FA0500B7DDF5 /* AnimatedAppApp.swift in Sources */,
 				BB03260B2864AFB000153DD2 /* SignInView.swift in Sources */,
+				BB0326182865902300153DD2 /* CourseSection.swift in Sources */,
 				BB03260F2864B60500153DD2 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
