@@ -10,11 +10,11 @@
 		BB03260B2864AFB000153DD2 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03260A2864AFB000153DD2 /* SignInView.swift */; };
 		BB03260D2864B39100153DD2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03260C2864B39100153DD2 /* CustomTextField.swift */; };
 		BB03260F2864B60500153DD2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03260E2864B60500153DD2 /* Extensions.swift */; };
-		BB0326142865848800153DD2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0326132865848700153DD2 /* TabBar.swift */; };
 		BB0326182865902300153DD2 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0326162865902300153DD2 /* CourseSection.swift */; };
 		BB0326192865902300153DD2 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0326172865902300153DD2 /* Course.swift */; };
 		BB03261B2865905600153DD2 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03261A2865905600153DD2 /* VCard.swift */; };
 		BB91AF9B286BEDEF002940E8 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB91AF9A286BEDEF002940E8 /* MenuRow.swift */; };
+		BB91AFA0286C02C2002940E8 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB91AF9F286C02C2002940E8 /* TabBar.swift */; };
 		BBBB97282869DD59002F4130 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBB97272869DD59002F4130 /* SideMenuView.swift */; };
 		BBBF5AF528698A4400DB2E05 /* HCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF5AF428698A4400DB2E05 /* HCard.swift */; };
 		BBBF5AF728698BDB00DB2E05 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF5AF628698BDB00DB2E05 /* HomeView.swift */; };
@@ -44,11 +44,11 @@
 		BB03260A2864AFB000153DD2 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		BB03260C2864B39100153DD2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BB03260E2864B60500153DD2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		BB0326132865848700153DD2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = AnimatedApp/TabBar.swift; sourceTree = SOURCE_ROOT; };
 		BB0326162865902300153DD2 /* CourseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
 		BB0326172865902300153DD2 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		BB03261A2865905600153DD2 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
 		BB91AF9A286BEDEF002940E8 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		BB91AF9F286C02C2002940E8 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		BBBB97272869DD59002F4130 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		BBBF5AF428698A4400DB2E05 /* HCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCard.swift; sourceTree = "<group>"; };
 		BBBF5AF628698BDB00DB2E05 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -106,6 +106,7 @@
 		BB032610286583F100153DD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BBBF5AF628698BDB00DB2E05 /* HomeView.swift */,
 				BBECF1912864095F00B7DDF5 /* OnboardingView.swift */,
 				BB03260A2864AFB000153DD2 /* SignInView.swift */,
 			);
@@ -131,6 +132,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BB91AF9C286C00AA002940E8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BB03261A2865905600153DD2 /* VCard.swift */,
+				BBBF5AF428698A4400DB2E05 /* HCard.swift */,
+				BB91AF9A286BEDEF002940E8 /* MenuRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BB91AF9D286C00D0002940E8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BBECF1732863FA0500B7DDF5 /* ContentView.swift */,
+				BB91AF9F286C02C2002940E8 /* TabBar.swift */,
+				BBBB97272869DD59002F4130 /* SideMenuView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		BBECF1652863FA0500B7DDF5 = {
 			isa = PBXGroup;
 			children = (
@@ -154,13 +175,8 @@
 			children = (
 				BBECF19C28642E6600B7DDF5 /* Info.plist */,
 				BBECF1712863FA0500B7DDF5 /* AnimatedAppApp.swift */,
-				BBECF1732863FA0500B7DDF5 /* ContentView.swift */,
-				BB0326132865848700153DD2 /* TabBar.swift */,
-				BB03261A2865905600153DD2 /* VCard.swift */,
-				BBBF5AF428698A4400DB2E05 /* HCard.swift */,
-				BBBB97272869DD59002F4130 /* SideMenuView.swift */,
-				BB91AF9A286BEDEF002940E8 /* MenuRow.swift */,
-				BBBF5AF628698BDB00DB2E05 /* HomeView.swift */,
+				BB91AF9D286C00D0002940E8 /* Navigation */,
+				BB91AF9C286C00AA002940E8 /* Components */,
 				BB032610286583F100153DD2 /* Views */,
 				BB0326122865840A00153DD2 /* Styles */,
 				BB0326152865902300153DD2 /* Model */,
@@ -316,13 +332,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB91AFA0286C02C2002940E8 /* TabBar.swift in Sources */,
 				BBBF5AF528698A4400DB2E05 /* HCard.swift in Sources */,
 				BBECF1922864095F00B7DDF5 /* OnboardingView.swift in Sources */,
 				BBBF5AF728698BDB00DB2E05 /* HomeView.swift in Sources */,
 				BBECF19B28642DB200B7DDF5 /* CustomFont.swift in Sources */,
 				BB0326192865902300153DD2 /* Course.swift in Sources */,
 				BB03260D2864B39100153DD2 /* CustomTextField.swift in Sources */,
-				BB0326142865848800153DD2 /* TabBar.swift in Sources */,
 				BB03261B2865905600153DD2 /* VCard.swift in Sources */,
 				BBBB97282869DD59002F4130 /* SideMenuView.swift in Sources */,
 				BBECF1742863FA0500B7DDF5 /* ContentView.swift in Sources */,

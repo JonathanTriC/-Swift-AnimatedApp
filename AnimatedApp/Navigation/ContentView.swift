@@ -11,6 +11,7 @@ import RiveRuntime
 struct ContentView: View {
     @AppStorage("selectedTab") var selectedTab: Tab = .chat
     @State var isOpen = false
+    @State var show = false
     let button = RiveViewModel(fileName: "menu_button", stateMachineName: "State Machine", autoPlay: false)
     
     var body: some View {
@@ -27,13 +28,13 @@ struct ContentView: View {
                 case .chat:
                     HomeView()
                 case .search:
-                    Text("Search")
+                    HomeView()
                 case .timer:
-                    Text("Timer")
+                    HomeView()
                 case .bell:
-                    Text("Bell")
+                    HomeView()
                 case .user:
-                    Text("User ")
+                    HomeView()
                 }
             }
             .safeAreaInset(edge: .bottom) {
@@ -48,8 +49,23 @@ struct ContentView: View {
             .rotation3DEffect(.degrees(isOpen ? 30 : 0), axis: (x: 0, y: -1, z: 0))
             .offset(x: isOpen ? 265 : 0)
             .scaleEffect(isOpen ? 0.9 : 1)
+            .scaleEffect(isOpen ? 0.92 : 1)
             .ignoresSafeArea()
             
+            Image(systemName: "person")
+                .frame(width: 36, height: 36)
+                .background(.white)
+                .mask(Circle())
+                .shadow(color: Color("Shadow").opacity(0.2), radius: 5, x: 0, y: 5)
+                .onTapGesture {
+                    withAnimation(.spring()) {
+                        show = true
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                .padding()
+                .offset(y: 4)
+                .offset(x: isOpen ? 100 : 0)
             
             button.view()
                 .frame(width: 44, height: 44)
@@ -57,16 +73,35 @@ struct ContentView: View {
                 .shadow(color: Color("Shadow").opacity(0.2), radius: 5, x: 0, y: 5)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 .padding()
-                .offset(x: isOpen ? 216 : 0)
+                .offset(x: isOpen ? 216 : 0) 
                 .onTapGesture {
                     button.setInput("isOpen", value: isOpen)
                     withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
                         isOpen.toggle()
                     }
                 }
+                .onChange(of: isOpen) { newValue in
+                    if newValue {
+                        UIApplication.shared.setStatusBarStyle(.lightContent, animated: true)
+                    } else {
+                        UIApplication.shared.setStatusBarStyle(.darkContent, animated: true)
+                    }
+                }
             
             TabBar()
                 .offset(y: isOpen ? 300 : 0)
+                .offset(y: show ? 200 : 0)
+                
+            if show {
+                OnboardingView(show: $show)
+                    .background(.white)
+                    .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                    .shadow(color: .black.opacity(0.5), radius: 40, x: 0, y: 40)
+                    .ignoresSafeArea(.all, edges: .top)
+                    .transition(.move(edge: .top))
+                    .offset(y: isOpen ? -10 : 0)
+                    .zIndex(1)
+            }
         }
     }
 }
